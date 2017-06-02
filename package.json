@@ -1,0 +1,26 @@
+{
+  "name": "nodis",
+  "version": "0.0.1",
+  "description": "codis redis node.js client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JianChuanting/nodis.git"
+  },
+  "keywords": [
+    "codis",
+    "redis",
+    "nodis",
+    "node.js",
+    "client"
+  ],
+  "author": "Chuanting Jian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JianChuanting/nodis/issues"
+  },
+  "homepage": "https://github.com/JianChuanting/nodis#readme"
+}
