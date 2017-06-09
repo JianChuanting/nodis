@@ -12,10 +12,17 @@ const nodis = new Nodis({
 
 
 nodis.on(nodis.ZK_CONNECT, zk => {
+  let i = 0;
+  while ( i++ < 10 ) {
+    nodis.getResource().then(client => console.log('codis client'))  
+  }
   nodis.getResource().then(client => {
-    
+    let i = 0;    
+    while ( i++ < 10 ) {
+      nodis.getResource().then(client => console.log('codis client'))  
+    }
     client.hmset('foobar', {'foo': new Buffer('bar')}, (err, data) => {
-      client.hgetall('foo', (err, data) => {
+      client.hgetall('foobar', (err, data) => {
         console.log(data)
       })
     })
